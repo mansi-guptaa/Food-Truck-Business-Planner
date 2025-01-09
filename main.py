@@ -1,7 +1,6 @@
 import streamlit as st
 import langchain_file
 
-# st.sidebar.title("Food Truck Business Planner")
 
 st.sidebar.text(" ")
 

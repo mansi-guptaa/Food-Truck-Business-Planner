@@ -1,17 +1,14 @@
-
-import os
-from secret import AZURE_DEPLOYEMENT, AZURE_ENDPOINT, AZURE_OPENAI_API_KEY, AZURE_API_VERSION
 from langchain.chat_models import AzureChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SequentialChain
-
+import streamlit as st
 
 
 llm = AzureChatOpenAI(
-    deployment_name = AZURE_DEPLOYEMENT , # Azure deployment name                 
-    api_key = AZURE_OPENAI_API_KEY,          # API key from Azure portal
-    azure_endpoint =  AZURE_ENDPOINT,  # Your Azure endpoint
-    api_version = AZURE_API_VERSION # Use the correct API version
+    deployment_name = st.secrets['AZURE_DEPLOYEMENT'] , # Azure deployment name                 
+    azure_endpoint =  st.secrets['AZURE_ENDPOINT'],  # Your Azure endpoint
+    api_key = st.secrets['AZURE_OPENAI_API_KEY'],          # API key from Azure portal
+    api_version = st.secrets['AZURE_API_VERSION'] # Use the correct API version
 )
 
 
