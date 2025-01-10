@@ -1,4 +1,6 @@
 # Food Truck Business Planner with LangChain and Azure OpenAI
+![Screenshot (344)](https://github.com/user-attachments/assets/5e1fc96e-edb4-470b-9539-2d1084e1f01a)
+
 
 This project demonstrates the use of LangChain and Azure OpenAI to brainstorm and plan a food truck business. By leveraging the capabilities of large language models (LLMs), it provides creative suggestions for various aspects of your business, such as:
 
